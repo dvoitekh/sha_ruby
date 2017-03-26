@@ -42,6 +42,8 @@ class ShaDigest
     end
 
     print_results
+
+    @sha_vars.map { |var| var.to_s(16).rjust(8, '0') }.join
   end
 
 private
